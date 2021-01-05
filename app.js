@@ -1,9 +1,11 @@
 // ADDING Modules
+const fs = require('fs');
 const express = require('express');
 const path = require("path");
 const bodyParser = require("body-parser");
 const app = express();
 
+const file = 'data-scraper/data.json';
 // Specify port
 const port = 80;
 
@@ -21,9 +23,20 @@ app.set('view engine', 'jsx'); // set the view engine as jsx
 app.set('views', path.join(__dirname,'/views')); // set the views directory
 app.engine('jsx', require('express-react-views').createEngine());
 
+// Reading json data
+let rawdata = fs.readFileSync(file);
+const data = JSON.parse(rawdata);
+let colleges = [];
+let reviews = [];
+for(var i=0;i<data.length;i++){
+    colleges[i] = data[i].College;
+    reviews[i] = data[i].Reviews;
+
+}
+
 // ENDPOINTS
 app.get('/', (req,res)=>{
-    const params = {title: 'College Reviews'}
+    const params = {title: 'College Reviews',colleges: colleges,reviews: reviews}
     res.status(200).render('index',params);
 });
 
@@ -33,10 +46,10 @@ app.get('/review', (req,res)=>{
 });
 
 
-app.post('/',(req,res)=>{
-    const mydata = new req.body;
-    console.log(mydata);
-});
+// app.post('/',(req,res)=>{
+//     const mydata = new req.body;
+//     console.log(mydata);
+// });
 
 app.post('/review',(req,res)=>{
     console.log(req.body);
