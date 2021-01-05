@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/npm/l/express"><img src="https://img.shields.io/github/languages/count/tush-tr/college-review"><img src="https://img.shields.io/github/languages/top/tush-tr/college-review"><img src="https://img.shields.io/badge/framework-express%20js-orange"><img src="https://img.shields.io/badge/Frontend-React%20js-red">
+<img src="https://img.shields.io/npm/l/express">  <img src="https://img.shields.io/github/languages/count/tush-tr/college-review">  <img src="https://img.shields.io/github/languages/top/tush-tr/college-review">  <img src="https://img.shields.io/badge/framework-express%20js-orange">  <img src="https://img.shields.io/badge/Frontend-React%20js-red">
 <br><br>
 <h1 align="center"> College Review</h1>
 
