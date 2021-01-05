@@ -19,7 +19,7 @@ for i in review_blocks:
   reviewer = right.find('div',class_="reviewer_review")
   block = f"College Name: {links.text} Reviews: {reviewer.text}"
   bd = {
-      "College Name": links.text,
+      "College": links.text,
       "Reviews": reviewer.text
   }
   li.append(bd)
