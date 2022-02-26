@@ -2,9 +2,11 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: college-review-pod1
+  labels:                                                   
+    type: LoadBalancer
 spec:
   containers:
     - name: c00
-      image: 
+      image: tush604docker/college-reviewprod1
       ports:
        - containerPort: 3000
