@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: c00
-      image: 
+      image: tush604docker/college-reviewprod1
       ports:
        - containerPort: 3000
