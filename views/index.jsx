@@ -1,20 +1,15 @@
-var React = require('react');
-var DefaultLayout = require('./default');
-const Searchbar = require('./searchbar');
-const CollegeData = require('./collegedata');
+var React = require("react");
+var DefaultLayout = require("./default");
+const Searchbar = require("./searchbar");
+const CollegeData = require("./collegedata");
 
-const App = (props) => {
-    return (
-        <DefaultLayout title={props.title} >
-
-            <Searchbar />
-            <CollegeData colleges={props.colleges} reviews={props.reviews} />
-            
-
-
-
-        </DefaultLayout>
-    );
-}
+const App = ({title,data}) => {
+  return (
+    <DefaultLayout title={title}>
+      <Searchbar />
+      <CollegeData data={data} />
+    </DefaultLayout>
+  );
+};
 
 module.exports = App;
