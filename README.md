@@ -4,7 +4,7 @@
 
 A mern stack web project in which people can review colleges.
 ## About Project
-I'm currently working on this project. Basically idea behind this project is, a platform where students can post reviews of their colleges, and also search colleges and see their reviews. This will help students to find a good college.
+Basically idea behind this project is, a platform where students can post reviews of their colleges, and also search colleges and see their reviews. This will help students to find a good college.
 <br><br>
 Welcome for pull requests.
 <br>
@@ -17,12 +17,29 @@ Welcome for pull requests.
 <li>Express js</li>
 <li>MongoDB</li>
 <li>Python</li>
+<li>Docker</li>
 </ul>
 
 # Preview
 <img src="preview.gif">
 
-## How to use?
+## Deployment
+### <li>This app is being deployed to heroku using github action automated CI.
+### <li>Kubernetes Deployment
+<li>You can deploy it to kubernetes using gcloud CLI
+<li>Clone the repo
+```sh
+git clone https://github.com/tush-tr/college-review
+cd college-review
+```
+
+<li>Run the deploy.sh script
+
+```sh
+source deploy.sh
+```
+
+## How to use locally?
 ### Prerequisites
 -- Node js
 <br>
