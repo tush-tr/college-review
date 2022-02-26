@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: college-review-pod1
+spec:
+  containers:
+    - name: c00
+      image: 
+      ports:
+       - containerPort: 3000
