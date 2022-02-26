@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tush-tr/nodejs-customer-review-app#readme",
   "dependencies": {
     "@tush-tr/nosondb": "^1.2.1",
+    "axios": "^0.26.0",
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
     "express-react-views": "^0.11.0",
