@@ -292,7 +292,6 @@ select option {
   border: none;
 }
 
-
 .reviewof {
   padding: 10px 18px;
 }
@@ -335,4 +334,24 @@ select option {
 }
 .container {
   display: flex;
+}
+
+.review-heading-title {
+  background-color: #d9dee1;;
+  padding: 5px;
+  color: rgb(59, 54, 54);
+}
+.review-heading-paragraph {
+  background-color: #d3dce3;;
+  padding: 5px;
+  border-radius: 2px;
+}
+tr {
+  background-color: rgb(228, 232, 235);
+  
+}
+table {
+    border-spacing:0 15px;
+    caption-side: bottom;
+    border-collapse: separate!important;
 }
