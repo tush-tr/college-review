@@ -302,7 +302,7 @@ select option {
 
 .Card {
   padding: 1px;
-  border-radius: var(--border-radius);
+  border-radius: 20px;
   background: linear-gradient(
     -67deg,
     rgba(#c8d8e7, 0.7),
@@ -310,7 +310,8 @@ select option {
   );
   overflow: hidden;
   box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
-  width: 380px;
+  width: 600px;
+
 }
 .CardInner {
   padding: 6px 6px;
@@ -329,29 +330,43 @@ select option {
   cursor: pointer;
   border: none;
 }
+.InputContainer {
+  width: 100%;
+}
 .Icon svg {
   transform: translate(-1px, -1px);
 }
-.container {
+.container-searchbar {
   display: flex;
 }
 
 .review-heading-title {
-  background-color: #d9dee1;;
+  background-color: #1c2024;
   padding: 5px;
-  color: rgb(59, 54, 54);
+  border-radius: 10px;
+  color: rgb(255 254 254);
 }
 .review-heading-paragraph {
-  background-color: #d3dce3;;
+  background-color: #212529;
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 12px;
+  color: white;
 }
 tr {
-  background-color: rgb(228, 232, 235);
-  
+  background-color: rgb(197 197 197);
 }
 table {
-    border-spacing:0 15px;
-    caption-side: bottom;
-    border-collapse: separate!important;
+  border-spacing: 0 15px;
+  caption-side: bottom;
+  border-collapse: separate !important;
+}
+.searchbar-form-wrapper {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #414446;
+  padding: 10px 10px;
 }

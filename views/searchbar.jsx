@@ -1,10 +1,10 @@
 var React = require("react");
 const Search = () => {
   return (
-    <form action="/" method="post">
+    <form action="/" method="post" className="searchbar-form-wrapper">
       <div className="Card">
         <div className="CardInner">
-          <div className="container">
+          <div className="container-searchbar">
 
             <button className="Icon">
               <svg
